@@ -34,7 +34,7 @@ Even though this is a graphical app, you need to launch it from the terminal.
 1. Open your terminal application (like **Konsole**).
 2. Drag and drop the `usb-wake-config.sh` file directly into the terminal window, or type its path (e.g., `./usb-wake-config.sh`).
 3. Press **Enter** to run it.
-4. A graphical window will pop up. Check the boxes next to the devices you want to allow to wake your PC, then click **OK**.
+4. A graphical window will pop up. Select the devices you want to allow to wake your PC, then click **OK**.
 5. Look back at your terminal window. It will ask for your `sudo` (administrator) password to apply the system changes. As you type your password, nothing will show up on screen—this is normal in Linux! Just type it and press Enter.
 
 You're all set! Your selected devices can now wake your PC.
