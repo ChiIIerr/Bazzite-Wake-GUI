@@ -24,7 +24,6 @@ Before Linux will allow a script to run, you have to explicitly give it permissi
 If you prefer using the terminal, open your console, navigate to where the file is saved, and run this command:
 
 chmod +x usb-wake-config.sh
----
 
 ## Step 2: Running the Configurator
 
