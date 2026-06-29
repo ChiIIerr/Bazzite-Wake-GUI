@@ -1,28 +1,27 @@
 # Bazzite USB/Bluetooth Wake Configurator
 
-A lightweight, dependency-free Bash script designed for [Bazzite](https://bazzite.gg/) (and other KDE Plasma-based Linux distributions) to easily manage which USB and Bluetooth devices can wake your system from sleep. 
+Welcome to Linux! If you're using [Bazzite](https://bazzite.gg/) (or another KDE Plasma-based system) and want your Bluetooth controller or USB mouse to wake your PC from sleep, you're in the right place.
 
-Instead of manually configuring `udev` rules and looking up bus/port numbers, this script provides a simple graphical checklist using KDE's built-in `kdialog`. 
+Normally, setting this up requires typing commands to find hardware ID numbers and manually editing system files. This script handles all of that for you by providing a simple, familiar graphical menu. Just check the boxes for the devices you want to use, and the script does the rest.
 
 ## Features
-* **Zero Dependencies:** Uses `kdialog`, which is already built into KDE Plasma. No need to layer packages, use Python virtual environments, or alter Bazzite's immutable filesystem.
-* **Wayland Safe:** The GUI launches in your standard user session space, only escalating to root (`sudo`) via the terminal when it actually needs to write the final rules file.
-* **State Aware:** Automatically checks your system's current hardware mapping and pre-checks devices that already have wake-up enabled.
+* **Built for Bazzite:** Uses the graphical tools already built into your system (`kdialog`). You don't need to install any extra software or mess with Bazzite's core files.
+* **Beginner Friendly:** Automatically scans your hardware and shows you plain-English names (like "Logitech Mouse" or "Intel Bluetooth") instead of confusing system paths.
 
 ---
 
-## Prerequisites
-* A Linux distribution running KDE Plasma (like Bazzite).
-* `kdialog` (included with KDE by default).
-* `sudo` privileges.
+## Step 1: Making the Script Executable
 
----
+Before Linux will allow a script to run, you have to explicitly give it permission. This is a built-in security feature to stop malicious files from running on their own. You can do this using your mouse or the terminal.
 
-## Installation
+### Method A: The GUI Way (Recommended)
+1. Open your file manager and find the `usb-wake-config.sh` file you downloaded or created.
+2. **Right-click** the file and select **Properties** at the bottom of the menu.
+3. Click on the **Permissions** tab at the top of the window.
+4. Check the box next to **Is executable** (it might also say "Allow executing file as program").
+5. Click **OK**.
 
-1. Clone this repository or download the `usb-wake-config.sh` script to your local machine. 
-   *(Alternatively, you can just create a file using `nano usb-wake-config.sh` and paste the code in.)*
-2. Navigate to the directory where the script is located.
-3. Make the script executable by running:
-   ```bash
-   chmod +x usb-wake-config.sh
+### Method B: The Terminal Way
+If you prefer using the terminal, open your console, navigate to where the file is saved, and run this command:
+```bash
+chmod +x usb-wake-config.sh
