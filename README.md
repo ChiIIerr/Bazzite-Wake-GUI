@@ -24,3 +24,18 @@ Before Linux will allow a script to run, you have to explicitly give it permissi
 If you prefer using the terminal, open your console, navigate to where the file is saved, and run this command:
 ```bash
 chmod +x usb-wake-config.sh
+---
+
+## Step 2: Running the Configurator
+
+Even though this is a graphical app, you need to launch it from the terminal. 
+
+*Why? Because Bazzite uses modern display security (Wayland) that prevents administrative tools from drawing windows on your screen. Launching it this way lets the menu open normally as "you," and then safely asks for your administrative password in the background only when it's time to save.*
+
+1. Open your terminal application (like **Konsole**).
+2. Drag and drop the `usb-wake-config.sh` file directly into the terminal window, or type its path (e.g., `./usb-wake-config.sh`).
+3. Press **Enter** to run it.
+4. A graphical window will pop up. Check the boxes next to the devices you want to allow to wake your PC, then click **OK**.
+5. Look back at your terminal window. It will ask for your `sudo` (administrator) password to apply the system changes. As you type your password, nothing will show up on screen—this is normal in Linux! Just type it and press Enter.
+
+You're all set! Your selected devices can now wake your PC.
