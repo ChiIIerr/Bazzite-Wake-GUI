@@ -22,7 +22,7 @@ Before Linux will allow a script to run, you have to explicitly give it permissi
 
 ### Method B: The Terminal Way
 If you prefer using the terminal, open your console, navigate to where the file is saved, and run this command:
-```bash
+
 chmod +x usb-wake-config.sh
 ---
 
