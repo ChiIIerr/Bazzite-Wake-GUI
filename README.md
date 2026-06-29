@@ -1,6 +1,5 @@
 # Bazzite USB/Bluetooth Wake Configurator
-
-Welcome to Linux! If you're using [Bazzite](https://bazzite.gg/) (or another KDE Plasma-based system) and want your Bluetooth controller or USB mouse to wake your PC from sleep, you're in the right place.
+If you're using [Bazzite](https://bazzite.gg/) (or another KDE Plasma-based system) and want your Bluetooth controller or USB mouse to wake your PC from sleep, you're in the right place.
 
 Normally, setting this up requires typing commands to find hardware ID numbers and manually editing system files. This script handles all of that for you by providing a simple, familiar graphical menu. Just check the boxes for the devices you want to use, and the script does the rest.
 
